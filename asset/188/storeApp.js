@@ -2,14 +2,11 @@
     .module('storeApp', ['infinite-scroll', 'ngRoute', 'ngSanitize', 'ngAnimate', 'ngTouch', 'chieffancypants.loadingBar', 'gsn.core', 'ui.bootstrap', 'ui.map', 'ui.keypress', 'ui.event', 'ui.utils', 'facebook', 'angulartics'])
     .config(['$routeProvider', function ($routeProvider) {
 
-      // setting up home file
-      var homeFile = gsn.getContentUrl('/views/home.html');
-      if (gsn.config.HomePage.ConfigData) {
-        var homeFileConfig = gsn.config.HomePage.ConfigData.homefile;
-        if (homeFileConfig) {
-          homeFile = gsn.getThemeUrl('/views/' + homeFileConfig.Description)
-        }
-      }
+
+      //#region route config
+     var homeFile = gsn.getContentServiceUrl('/meta/' + gsn.config.ChainId + '/?name=home page&meta=home&type=text/html');
+      gsn.config.DefaultLayout = gsn.getContentServiceUrl('/meta/' + gsn.config.ChainId + '/?name=home page&meta=template&type=text/html');
+
 
       // storeRequired attribute identify route require a store selection
       $routeProvider
