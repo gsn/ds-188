@@ -2,11 +2,8 @@
     .module('storeApp', ['infinite-scroll', 'ngRoute', 'ngSanitize', 'ngAnimate', 'ngTouch', 'chieffancypants.loadingBar', 'gsn.core', 'ui.bootstrap', 'ui.map', 'ui.keypress', 'ui.event', 'ui.utils', 'facebook', 'angulartics'])
     .config(['$routeProvider', function ($routeProvider) {
 
-
-      //#region route config
-     var homeFile = gsn.getContentServiceUrl('/meta/' + gsn.config.ChainId + '/?name=home page&meta=home&type=text/html');
+      var homeFile = gsn.getContentServiceUrl('/meta/' + gsn.config.ChainId + '/?name=home page&meta=home&type=text/html');
       gsn.config.DefaultLayout = gsn.getContentServiceUrl('/meta/' + gsn.config.ChainId + '/?name=home page&meta=template&type=text/html');
-
 
       // storeRequired attribute identify route require a store selection
       $routeProvider
@@ -220,7 +217,6 @@
             templateUrl: gsn.getContentUrl('/views/engine/static-content.html'),
             caseInsensitiveMatch: true
           });
-      //#endregion
 
     }]);
 
