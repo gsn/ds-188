@@ -51,7 +51,6 @@ ul
   height: 0;
 }
 
-.header.container.container-full,
 .footer.container.container-full
 {
   width: auto;
@@ -131,7 +130,6 @@ label
 
 .navbar-toggleAccount
 {
-  margin: -34px 0;
   padding: 6px 10px;
 }
 
@@ -343,7 +341,6 @@ width: 50px;
 
 .navSilver > li
 {
-  float: left;
   padding: 10px 15px;
 }
 
@@ -1652,10 +1649,6 @@ textarea
     clear: left;
   }
 
-  .navbar-rightSL {
-    float: right;
-  }
-
   .dropdown-menuList {
     margin-left: -188px;
   }
@@ -1798,6 +1791,22 @@ textarea
   }
 }
 
+@media (max-width: 1199px) {
+	img.logo{
+		width:130px;
+	}
+	.navLeft {
+		margin-left: 5px;
+	}
+	.navRight {
+		float: right;
+	}
+	.logo-outer{
+		margin-top: 60px;
+	}
+}
+
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
   /*------ Header & Nav ------*/
   .signInBar {
@@ -1902,4 +1911,131 @@ textarea
 {
   margin-bottom: 10px;
   margin-top: -1px;
+}
+
+#gmodal .gmodal-wrap{
+	display: block;
+}
+
+.signInBar  .navbar-toggle{
+	margin-top: 1px;
+}
+
+.navbar-rightSL {
+	float: right;
+}
+
+.navbar-rightSL  .btn-groupList{
+	margin-right: 15px;
+}
+
+
+.logo-outer{
+	float: left;
+}
+
+@media (max-width: 991px) {
+	.logo-outer{
+		margin-left: 30%;
+	}
+}
+
+@media (max-width: 650px) {
+	.logo-outer{
+		margin-left: 20%;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.logo-outer{
+		margin-left: 12%;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo-outer{
+		margin-left: 10%;
+	}
+}
+@media (max-width: 400px) {
+	.logo-outer{
+		margin-left: 5%;
+	}
+}
+@media (max-width: 360px) {
+	.logo-outer{
+		margin-left: 2%;
+	}
+}
+
+
+@media (max-width: 767px){
+	.logo {
+		height: auto;
+	}
+	.navbar-rightSL  .btn-groupList {
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 992px){
+	.navSilver > li {
+	  float: left;
+	}
+}
+
+
+@media (max-width: 1199px){
+	.mainNav {
+	  font-size: 13px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+	img.logo {
+		height: auto!important;
+	}
+}
+@media (max-width: 420px) {
+	img.logo{
+		width:110px;
+	}
+}
+
+@media (max-width: 991px){
+	ul.nav.navSilver.navSilver-Main{
+		border: 1px solid #ef402f;
+		position: absolute;
+		top: 160px;
+		z-index: 200;
+		background-color: #2a2c21;
+	}
+	.navRight ul.nav.navSilver.navSilver-Main{
+		left: 130px;
+	}
+}
+
+@media (min-width: 780px){
+	.navRight ul.nav.navSilver.navSilver-Main{
+		left: 150px;
+	}
+}
+
+@media (min-width: 820px){
+	.navRight ul.nav.navSilver.navSilver-Main{
+		left: 170px;
+	}
+}
+
+@media (min-width: 860px){
+	.navRight ul.nav.navSilver.navSilver-Main{
+		left: 200px;
+	}
+}
+
+@media (min-width: 920px){
+	.navRight ul.nav.navSilver.navSilver-Main{
+		left: 240px;
+	}
 }
