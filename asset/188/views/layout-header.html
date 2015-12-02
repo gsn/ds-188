@@ -20,9 +20,6 @@
         </div>
     </div>   
 </div>
-<div>
-    <a data-ng-href="/"><img data-ng-src="{{getContentUrl('/images/logo.png')}}" alt="Store Logo" class="logo hidden-lg" /></a>
-</div>
 <div class="row storeBranding">
     <div class="container noPadWidth mainNav">
         <div class="nav navSL navbar-nav navbar-navSL navbar-right navbar-rightSL">
@@ -39,7 +36,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+		</div>
         <div class="navLeft">
             <div class="btn-group btn-groupMenu hidden-lg hidden-md pull-left">
                 <a class="btn btn-default btnSilver" data-ng-click="gvm.menuInactive = !gvm.menuInactive"><i class="fa fa-bars"></i> Menu</a>
@@ -53,8 +50,9 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="logo-outer">
             <a data-ng-href="/"><img data-ng-src="{{getContentUrl('/images/logo.png')}}" alt="Store Logo" class="logo hidden-xs hidden-sm hidden-md" /></a>
+			<a data-ng-href="/"><img data-ng-src="{{getContentUrl('/images/logo.png')}}" alt="Store Logo" class="logo hidden-lg" /></a>
         </div>
         <div class="navRight">
             <div class="visible-lg visible-md" data-ng-class="{ 'visible-sm visible-xs': gvm.menuInactive }">
