@@ -22,10 +22,10 @@
 
   <title>[chainname]</title>
   <link href="//cdn-staging.gsngrocers.com/script/lib/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
-  <link href="//cdn-staging.gsngrocers.com/asset/common/styles/global.css" rel="stylesheet" type="text/css">    
+  <link href="//cdn-staging.gsngrocers.com/asset/common/styles/global.css?nocache=1" rel="stylesheet" type="text/css">    
   <link href="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css"><!-- for circular imagemap -->    
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">     
-  <link href="/asset/[chainid]/styles/app.css" rel="stylesheet" type="text/css">          
+  <link href="/asset/[chainid]/styles/app.css?nocache=1" rel="stylesheet" type="text/css">          
   <!--[if lt IE 10]>
     <script src="http://cdn-staging.gsngrocers.com/script/lib/proxy/xdomain.min.js" data-slave="http://cdn-staging.gsngrocers.com/script/lib/proxy/proxy.html"></script>  
   <![endif]-->
@@ -39,8 +39,8 @@
   <!-- above the fold scripts -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js?nocache=1"></script>
-  <script src="http://cdn.gsngrocers.com/script/gcprinter/gcprinter.min.js?nocache=1"></script>                                         
-  <script data-gsnid="[chainid]" src="http://cdn.gsngrocers.com/script/gsndfp/gsndfp.min.js?nocache=1"></script>  
+  <script src="http://cdn.gsngrocers.com/script/gcprinter/gcprinter.min.js?nocache=1"></script>                    
+  <script data-brickid="[chainid]" src="http://cdn-staging.gsngrocers.com/script/bricktag/bricktag.min.js?nocache=1"></script> 
   <script src="http://cdn-staging.gsngrocers.com/script/gsncore/latest/gsncore.min.js?nocache=1"></script>       
 
   <!-- begin content -->   
@@ -69,7 +69,20 @@
       m.parentNode.insertBefore(a, m);
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   </script>
-  <div class="hidden" data-gsn-path-pixel="http://ib.adnxs.com/seg?add=3623329&t=2&redir=https://secure.adnxs.com/getuid?https://clientapi.gsn2.com/api/v1/partner/linkadnx/[[ProfileId]]/[[ChainId]]?adnxs_uid=$UID&nocache=[[CACHEBUSTER]]"></div>
+<script>var clickySiteId = ((globalConfig || {}).data || {}).ClickySiteId;
+var clicky_site_ids = clicky_site_ids || [];
+var clicky_custom = { pageview_disable : 1, history_disable : 1 };
+if (clickySiteId) {
+  clicky_site_ids.push(clickySiteId);
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+}
+</script>    
   <div data-bs-display-mode="bsDisplayMode"></div>
   <script>var googleTagId = ((globalConfig || {}).data || {}).GoogleTagId;
   if (googleTagId) {
@@ -79,7 +92,7 @@
      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
      })(window,document,'script','dataLayer',googleTagId);
   }
-  </script>                   
+  </script>                  
   <!--end:analytics-->  
 </body>
 </html>
