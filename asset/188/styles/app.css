@@ -169,7 +169,7 @@ label
   top:0px;left:0px;
   width:100%;
   height:36px;
-  background: linear-gradient(#097f36 0%, transparent 0%), linear-gradient(135deg, #097f36 33.33%, transparent 33.33%) 0 0%, #097f36 linear-gradient(45deg, #097f36 33.33%, #2a2c21 33.33%) 0 0%;
+  background: linear-gradient(#097f36 0%, transparent 0%), linear-gradient(-45deg, #097f36 33.33%, transparent 33.33%) 0 0%, #097f36 linear-gradient(45deg, #097f36 33.33%, #2a2c21 33.33%) 0 0%;
   background: -webkit-linear-gradient(#097f36 0%, transparent 0%), -webkit-linear-gradient(135deg, #097f36 33.33%, transparent 33.33%) 0 0%, #097f36 -webkit-linear-gradient(45deg, #097f36 33.33%, #2a2c21 33.33%) 0 0%;
   background: -o-linear-gradient(#097f36 0%, transparent 0%), -o-linear-gradient(135deg, #097f36 33.33%, transparent 33.33%) 0 0%, #097f36 -o-linear-gradient(45deg, #097f36 33.33%, #767676 33.33%) 0 0%;
   background: -moz-linear-gradient(#097f36 0%, transparent 0%), -moz-linear-gradient(135deg, #097f36 33.33%, transparent 33.33%) 0 0%, #097f36 -moz-linear-gradient(45deg, #097f36 33.33%, #2a2c21 33.33%) 0 0%;
