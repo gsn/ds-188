@@ -1982,6 +1982,7 @@ textarea
 @media (min-width: 992px){
 	.navSilver > li {
 	  float: left;
+    padding-left: 14px;
 	}
 }
 
