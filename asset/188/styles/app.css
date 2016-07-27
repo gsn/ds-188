@@ -348,6 +348,7 @@ width: 50px;
 {
   color: #ffffff;
   padding: 0;
+  font-size:1.3rem;
 }
 
 .navSilver > li > a:hover, .navSilver > li > a:focus,
